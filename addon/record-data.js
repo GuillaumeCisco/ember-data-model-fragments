@@ -302,7 +302,7 @@ export default class FragmentRecordData extends RecordData {
   }
 
   hasChangedAttributes() {
-    return this.changedAttributes().length;
+    return Object.keys(this.changedAttributes()).length;
   }
 
   resetRecord() {
